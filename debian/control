@@ -1,0 +1,20 @@
+Source: ruby-yard-chef
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Christopher Huhn, GSI <C.Huhn@gsi.de>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-yard-chef.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-yard-chef.git;a=summary
+Homepage: https://github.com/rightscale/yard-chef
+Testsuite: autopkgtest
+XS-Ruby-Versions: all
+
+Package: ruby-yard-chef
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+# yard (~> 0.8), redcarpet (~> 2.1.1)
+Description: YARD plugin for Chef
+ yard-chef is a YARD plugin for Chef that adds support for documenting Chef cookbooks, resources, providers, and definitions.
