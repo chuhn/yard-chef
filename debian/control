@@ -11,11 +11,12 @@ Homepage: https://github.com/rightscale/yard-chef
 Testsuite: autopkgtest
 XS-Ruby-Versions: all
 
-Package: ruby-yard-chef
+Package: yard-plugin-chef
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter,
- yard, ruby-redcarpet
-Description: YARD plugin for Chef
+ yard (>= 0.8),
+# redcarpet (~> 2.1.1)
+Description: YARD plugin for Chef cookbook generation
  yard-chef is a YARD plugin for Chef that adds support for documenting
  Chef cookbooks, resources, providers, and definitions.
