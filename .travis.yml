@@ -1,15 +1,16 @@
-language: ruby
-sudo: false
-cache: bundler
-rvm:
-- 2.2.2
-- 2.3.1
-os:
-- linux
+language: bash
 
-matrix:
-  include:
-    - rvm: 2.3.1
-      env:
-        RUBOCOP: 1
-      script: $(which bundle) exec rubocop
+sudo: required
+
+services:
+  - docker
+
+script:
+  - wget -O- http://travis.debian.net/script.sh | sh -
+
+branches:
+  except:
+    - /^debian\/\d/
+
+env:
+  - TRAVIS_DEBIAN_DISTRIBUTION=sid
