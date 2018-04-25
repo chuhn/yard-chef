@@ -14,7 +14,8 @@ XS-Ruby-Versions: all
 Package: ruby-yard-chef
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-# yard (~> 0.8), redcarpet (~> 2.1.1)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter,
+ yard, ruby-redcarpet
 Description: YARD plugin for Chef
- yard-chef is a YARD plugin for Chef that adds support for documenting Chef cookbooks, resources, providers, and definitions.
+ yard-chef is a YARD plugin for Chef that adds support for documenting
+ Chef cookbooks, resources, providers, and definitions.

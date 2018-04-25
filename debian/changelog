@@ -1,5 +1,9 @@
-ruby-yard-chef (1.0.0-1) UNRELEASED; urgency=medium
+ruby-yard-chef (2.0.0-1) UNRELEASED; urgency=medium
 
+  [ Christopher Huhn, GSI ]
   * Initial release (Closes: #nnnn)
 
- -- Christopher Huhn, GSI <C.Huhn@gsi.de>  Tue, 19 Apr 2016 16:34:57 +0200
+  [ Christopher Huhn ]
+  * New upstream version
+
+ -- Christopher Huhn <C.Huhn@gsi.de>  Wed, 25 Apr 2018 15:15:25 +0200
