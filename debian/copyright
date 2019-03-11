@@ -5,8 +5,6 @@ Source: https://github.com/aleksey-hariton/yard-chef
 Files: *
 Copyright: 2012 RightScale, Inc.
            2015 Aleksey Hariton <aleksey.hariton@gmail.com>
-
-
 License: MIT
 
 Files: debian/*
